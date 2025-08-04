@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Banking UI</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #c1dfc4, #deecdd);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .bank-container {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .bank-container h2 {
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    .balance-display {
+      background: #f4f4f4;
+      padding: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #27ae60;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      border: 2px solid #dcdcdc;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .deposit-btn {
+      background-color: #3498db;
+      color: white;
+    }
+
+    .deposit-btn:hover {
+      background-color: #2980b9;
+    }
+
+    .withdraw-btn {
+      background-color: #e74c3c;
+      color: white;
+    }
+
+    .withdraw-btn:hover {
+      background-color: #c0392b;
+    }
+
+    @media (max-width: 500px) {
+      .btn-group {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bank-container">
+    <h2>My Bank Account</h2>
+    <div class="balance-display">
+      ₹10,000
+    </div>
+    <div class="btn-group">
+      <button class="btn deposit-btn">Deposit</button>
+      <button class="btn withdraw-btn">Withdraw</button>
+    </div>
+  </div>
+
+</body>
+</html>
